@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моё расписание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Моё учебное расписание</h1>
+        <p>Студент: Тимур Шмелев Калачев Станислав</p>
+    </header>
+  <nav>
+    <p>
+      <a href="vizitka.html">Главная</a>      
+      <a href="anketa.html">Анкета</a>
+      <a href="rasp.html">Расписание</a>
+    </p>
+  </nav>
+    <main>
+        <section>
+            <h2>расписание на неделю</h2>
+            <table border="1">
+                <tr>
+                    <th>День</th>
+                    <th>Пара 1</th>
+                    <th>Пара 2</th>
+                    <th>Пара 3</th>
+                </tr>
+                <tr>
+                    <td>Понедельник</td>
+                    <td>Математика</td>
+                    <td>Информатика</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Вторник</td>
+                    <td>Физика</td>
+                    <td>История</td>
+                    <td>Физкультура</td>
+                </tr>
+                <tr>
+                    <td>Среда</td>
+                    <td>Программирование</td>
+                    <td>Англиский</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Четверг</td>
+                    <td>Физика</td>
+                    <td>Русский язык</td>
+                    <td>Математика</td>
+                </tr>
+                <tr>
+                    <td>Пятница</td>
+                    <td>Информатика</td>
+                    <td>Программирование</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Суббота</td>
+                    <td>Прогулка</td>                
+                </tr>
+                <tr>
+                    <td>Воскресенье</td>
+                    <td>Выполнение домашнего задания</td>
+                </tr>
+            </table>
+        </section>
+        <h2>Обратная связь по расписанию</h2>
+        <form>
+            <label>Имя: <input type="text" name="name" required></label><br><br>
+            <label>Курс:
+                <select name="course">
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3">3 курс</option>
+                </select>
+            </label><br><br>
+            <p>Какие пары вам нравятся?</p>
+            <label><input type="checkbox" name="like" value="math"> Математика</label>
+            <label><input type="checkbox" name="like" value="egnl"> Англиский</label>
+            <label><input type="checkbox" name="like" value="fis"> Физкультура</label>
+            <label><input type="checkbox" name="like" value="it"> Информатика</label>
+            <label><input type="checkbox" name="like" value="prog"> Программирование</label><br><br>
+            <p>Уровень сложности занятий:</p>
+            <label><input type="radio" name="level" value="easy"> Невозможно</label>
+            <label><input type="radio" name="level" value="medium"> Легко</label>
+            <label><input type="radio" name="level" value="hard"> Тяжело</label><br><br>
+            <label>Комментарий:<br>
+                <textarea name="comment" rows="3" cols="40"></textarea>
+            </label><br><br>
+            <button type="submit">Отправить</button>
+        </form>
+</main>
+<footer>
+    <p>© 2026 Мой сайт · Создано на занятиях по веб-разработке</p>
+</footer>
+    
+</body>
